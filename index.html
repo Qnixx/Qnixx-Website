@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="The Offical Qnixx Project Website">
+        <title>Qnixx Project</title>
+        <link rel="stylesheet" href="styles.css"> 
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script>
+            $.get("nav.html", function(data){
+                $(".navigation").replaceWith(data);
+            });
+        </script>
+    </head>
+    
+    <body id="body">
+        <div class="navigation"></div>
+        <h1 class="header-text">Welcome to the Qnixx Project!</h1>
+    </body>
+</html>
